@@ -1,0 +1,67 @@
+{
+  "name": "clodds",
+  "version": "1.9.1",
+  "description": "OpenRouter-powered autonomous AI trading agent for HSKSwap on HSK Chain Mainnet. Six-signal analysis, conversational controls, messaging integrations, and guarded on-chain execution.",
+  "main": "dist/hsk/runtime.js",
+  "scripts": {
+    "dev": "tsx watch src/hsk/runtime.ts",
+    "clean": "node -e \"require('fs').rmSync('dist',{recursive:true,force:true})\"",
+    "build": "npm run clean && tsc --incremental false",
+    "start": "node dist/hsk/runtime.js",
+    "gateway": "tsx src/hsk/runtime.ts",
+    "typecheck": "tsc --noEmit --incremental false",
+    "test": "node --test --import tsx \"tests/hsk/**/*.test.ts\"",
+    "ci": "npm run typecheck && npm run test && npm run build",
+    "prepack": "npm run build"
+  },
+  "keywords": [
+    "trading",
+    "hsk-chain",
+    "hskswap",
+    "openrouter",
+    "crypto",
+    "defi",
+    "evm",
+    "arbitrage",
+    "mev-protection",
+    "ai",
+    "llm-agent",
+    "telegram-bot",
+    "trading-bot",
+    "whatsapp-bot"
+  ],
+  "author": "Clodds HSK contributors",
+  "engines": {
+    "node": ">=22.0.0"
+  },
+  "license": "MIT",
+  "files": [
+    "dist",
+    "public",
+    "README.md",
+    "LICENSE"
+  ],
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.78.0",
+    "@whiskeysockets/baileys": "^6.7.0",
+    "dotenv": "^16.6.1",
+    "ethers": "^6.16.0",
+    "express": "^4.18.2",
+    "grammy": "^1.40.0",
+    "json5": "^2.2.3",
+    "pino": "^8.18.0",
+    "pino-pretty": "^10.3.1",
+    "ws": "^8.16.0"
+  },
+  "overrides": {
+    "protobufjs": "^7.6.6"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/node": "^20.19.33",
+    "@types/ws": "^8.5.10",
+    "puppeteer": "^25.10.0",
+    "tsx": "^4.7.0",
+    "typescript": "^5.3.3"
+  }
+}
