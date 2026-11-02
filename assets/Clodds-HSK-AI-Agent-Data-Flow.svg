@@ -1,0 +1,328 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="913" height="1723" viewBox="0 0 913 1723">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#f6fbfa"/>
+    </linearGradient>
+    <linearGradient id="navy" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#063b5e"/>
+      <stop offset="1" stop-color="#075d89"/>
+    </linearGradient>
+    <linearGradient id="mint" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#35e6a6"/>
+      <stop offset="1" stop-color="#22d3ee"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="3" stdDeviation="5" flood-color="#0a4a67" flood-opacity="0.13"/>
+    </filter>
+    <marker id="arrowBlue" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#087fc1"/>
+    </marker>
+    <marker id="arrowMint" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#159e9b"/>
+    </marker>
+    <marker id="arrowOrange" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#f07a00"/>
+    </marker>
+    <style>
+      .t { font-family: Arial, Helvetica, sans-serif; fill: #073d63; }
+      .h { font-family: Arial, Helvetica, sans-serif; fill: #073d63; font-weight: 800; }
+      .b { font-family: Arial, Helvetica, sans-serif; fill: #607a95; font-weight: 600; }
+      .w { font-family: Arial, Helvetica, sans-serif; fill: #fff; font-weight: 800; }
+      .o { font-family: Arial, Helvetica, sans-serif; fill: #f06f00; font-weight: 800; }
+      .card { fill: #fff; stroke: #86c9f2; stroke-width: 1.5; }
+      .mintcard { fill: #fff; stroke: #56d8c0; stroke-width: 1.5; }
+      .orangecard { fill: #fff; stroke: #ff9d54; stroke-width: 1.5; }
+      .section { fill: #fbfdff; stroke: #91cef2; stroke-width: 1.5; }
+      .chip { fill: #f6fbfe; stroke: #a8d8f2; stroke-width: 1; }
+      .flow { fill: none; stroke: #087fc1; stroke-width: 2.5; marker-end: url(#arrowBlue); }
+      .mflow { fill: none; stroke: #159e9b; stroke-width: 2.5; marker-end: url(#arrowMint); }
+      .oflow { fill: none; stroke: #f07a00; stroke-width: 2.5; marker-end: url(#arrowOrange); }
+    </style>
+  </defs>
+
+  <rect width="913" height="1723" fill="url(#bg)"/>
+  <circle cx="835" cy="74" r="95" fill="#35e6a6" opacity=".035"/>
+  <circle cx="70" cy="780" r="120" fill="#22d3ee" opacity=".025"/>
+
+  <!-- Header -->
+  <g transform="translate(23,15)">
+    <rect width="84" height="84" rx="24" fill="#071b24"/>
+    <circle cx="42" cy="42" r="29" fill="none" stroke="#22d3ee" stroke-width="4"/>
+    <circle cx="42" cy="12" r="4" fill="#35e6a6"/>
+    <circle cx="68" cy="28" r="4" fill="#22d3ee"/>
+    <circle cx="16" cy="28" r="4" fill="#22d3ee"/>
+    <path d="M20 47 C20 36 30 29 40 31 C47 21 62 25 63 37 C74 40 73 55 62 58 H27 C17 57 14 51 20 47Z" fill="none" stroke="#35e6a6" stroke-width="5" stroke-linecap="round"/>
+    <path d="M30 66 l12-13 9 8 13-17" fill="none" stroke="#22d3ee" stroke-width="5" stroke-linecap="round"/>
+  </g>
+  <text x="126" y="47" class="h" font-size="38">CLODDS HSK AI DATA FLOW</text>
+  <text x="127" y="76" class="o" font-size="18">User Intent → AI Agent → Guarded HSKSwap Result</text>
+  <text x="127" y="98" class="b" font-size="12.5">Secure context, tool reasoning, deterministic execution and verified response delivery</text>
+
+  <!-- Input / result loop -->
+  <g transform="translate(37,119)">
+    <rect width="194" height="82" rx="17" class="orangecard"/>
+    <circle cx="31" cy="31" r="20" fill="#ff7a00"/>
+    <circle cx="31" cy="24" r="6" fill="#fff"/><path d="M21 44 q10-15 20 0" fill="#fff"/>
+    <text x="62" y="28" class="o" font-size="13">USER INTENT</text>
+    <text x="62" y="48" class="b" font-size="10.5">Question • status • analysis</text>
+    <text x="62" y="65" class="b" font-size="10.5">quote • confirmed live swap</text>
+  </g>
+  <path d="M232 160 H290" class="oflow"/>
+  <text x="260" y="150" text-anchor="middle" class="o" font-size="10">INPUT</text>
+
+  <g transform="translate(294,119)">
+    <rect width="323" height="82" rx="17" fill="url(#navy)" filter="url(#shadow)"/>
+    <circle cx="38" cy="41" r="25" fill="#fff" opacity=".96"/>
+    <path d="M25 43 C25 34 32 29 40 31 C45 23 57 27 57 36 C66 39 66 50 57 53 H31 C23 52 20 47 25 43Z" fill="#35e6a6"/>
+    <text x="75" y="32" class="w" font-size="19">Clodds HSK Channel Layer</text>
+    <text x="75" y="53" font-family="Arial" font-size="10.5" font-weight="600" fill="#d3f5ea">WebChat • Telegram • WhatsApp • HTTP / WS</text>
+    <text x="75" y="69" font-family="Arial" font-size="10.5" font-weight="600" fill="#d3f5ea">Normalized IncomingMessage + channel metadata</text>
+  </g>
+  <path d="M674 160 H620" class="flow"/>
+  <text x="649" y="150" text-anchor="middle" class="h" font-size="10">RESULT</text>
+  <g transform="translate(678,119)">
+    <rect width="168" height="82" rx="17" class="card"/>
+    <circle cx="31" cy="31" r="20" fill="#087fc1"/>
+    <path d="M21 31 l7 7 14-16" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round"/>
+    <text x="61" y="28" class="h" font-size="13">USER OUTCOME</text>
+    <text x="61" y="48" class="b" font-size="10.2">Answer • action status</text>
+    <text x="61" y="65" class="b" font-size="10.2">receipt • explorer link</text>
+  </g>
+  <path d="M846 160 H873 Q890 160 890 178 V1650 Q890 1666 874 1666 H535" class="flow"/>
+  <path d="M456 201 V220" class="flow"/>
+
+  <!-- 01 -->
+  <g>
+    <rect x="29" y="222" width="823" height="176" rx="14" class="section"/>
+    <circle cx="58" cy="249" r="20" fill="#087fc1"/>
+    <text x="58" y="256" text-anchor="middle" class="w" font-size="19">01</text>
+    <text x="101" y="254" class="h" font-size="18">CAPTURE &amp; NORMALIZE REQUEST</text>
+    <g transform="translate(89,270)">
+      <rect width="113" height="78" rx="12" class="card"/>
+      <circle cx="56" cy="23" r="15" fill="#e5f5fd"/><text x="56" y="28" text-anchor="middle" class="h" font-size="15">ID</text>
+      <text x="56" y="51" text-anchor="middle" class="h" font-size="11">User &amp; account</text>
+      <text x="56" y="66" text-anchor="middle" class="b" font-size="9.5">platform identity</text>
+    </g>
+    <g transform="translate(212,270)">
+      <rect width="113" height="78" rx="12" class="card"/>
+      <circle cx="56" cy="23" r="15" fill="#e5f5fd"/><text x="56" y="28" text-anchor="middle" class="h" font-size="16">#</text>
+      <text x="56" y="51" text-anchor="middle" class="h" font-size="11">Chat metadata</text>
+      <text x="56" y="66" text-anchor="middle" class="b" font-size="9.5">chat ID • thread</text>
+    </g>
+    <g transform="translate(335,270)">
+      <rect width="113" height="78" rx="12" class="card"/>
+      <circle cx="56" cy="23" r="15" fill="#e7fbf4"/><text x="56" y="28" text-anchor="middle" class="h" font-size="15">TXT</text>
+      <text x="56" y="51" text-anchor="middle" class="h" font-size="11">Message content</text>
+      <text x="56" y="66" text-anchor="middle" class="b" font-size="9.5">text + attachments</text>
+    </g>
+    <g transform="translate(458,270)">
+      <rect width="113" height="78" rx="12" class="mintcard"/>
+      <circle cx="56" cy="23" r="15" fill="#e7fbf4"/><text x="56" y="28" text-anchor="middle" class="h" font-size="13">WS</text>
+      <text x="56" y="51" text-anchor="middle" class="h" font-size="11">Channel adapter</text>
+      <text x="56" y="66" text-anchor="middle" class="b" font-size="9.5">normalize payload</text>
+    </g>
+    <path d="M571 309 H625" class="mflow"/>
+    <g transform="translate(629,270)">
+      <rect width="184" height="78" rx="14" class="mintcard"/>
+      <circle cx="34" cy="39" r="18" fill="#35e6a6"/><text x="34" y="44" text-anchor="middle" class="h" font-size="14">CM</text>
+      <text x="64" y="33" class="h" font-size="13">Channel Manager</text>
+      <text x="64" y="53" class="b" font-size="10">Routes normalized request</text>
+    </g>
+    <rect x="284" y="359" width="320" height="27" rx="13.5" fill="#fff4eb" stroke="#ff896b"/>
+    <text x="444" y="377" text-anchor="middle" font-family="Arial" font-size="10.5" font-weight="700" fill="#e34d37">Input limit • configured channel auth • normalized IDs</text>
+  </g>
+  <path d="M440 398 V414" class="flow"/>
+
+  <!-- 02 -->
+  <g>
+    <rect x="29" y="416" width="823" height="177" rx="14" class="section"/>
+    <circle cx="58" cy="443" r="20" fill="#087fc1"/><text x="58" y="450" text-anchor="middle" class="w" font-size="19">02</text>
+    <text x="101" y="448" class="h" font-size="18">BUILD SCOPED SESSION CONTEXT</text>
+    <g transform="translate(89,465)">
+      <rect width="180" height="26" rx="7" class="mintcard"/><text x="14" y="18" class="h" font-size="10.5">User + platform identity</text>
+      <rect y="31" width="180" height="26" rx="7" class="mintcard"/><text x="14" y="49" class="h" font-size="10.5">Up to 30 history items</text>
+      <rect y="62" width="180" height="26" rx="7" class="mintcard"/><text x="14" y="80" class="h" font-size="10.5">Preferences + model override</text>
+      <rect y="93" width="180" height="26" rx="7" class="mintcard"/><text x="14" y="111" class="h" font-size="10.5">Current message + thread</text>
+    </g>
+    <path d="M269 525 H332" class="mflow"/>
+    <g transform="translate(336,466)">
+      <rect width="238" height="94" rx="15" class="card"/>
+      <circle cx="44" cy="47" r="26" fill="#087fc1"/>
+      <circle cx="44" cy="47" r="7" fill="#fff"/>
+      <circle cx="44" cy="30" r="5" fill="#fff"/><circle cx="59" cy="55" r="5" fill="#fff"/><circle cx="29" cy="55" r="5" fill="#fff"/>
+      <path d="M44 37 V42 M50 51 L55 54 M38 51 L33 54" stroke="#fff" stroke-width="2"/>
+      <text x="82" y="41" class="h" font-size="16">Session Manager</text>
+      <text x="82" y="61" class="b" font-size="10.5">get or create in-memory session</text>
+    </g>
+    <path d="M574 513 H630" class="mflow"/>
+    <g transform="translate(634,466)">
+      <rect width="179" height="94" rx="15" class="mintcard"/>
+      <path d="M23 32 h41 v35 h-41z" fill="#e7fbf4"/><path d="M27 38 h33 M27 47 h33 M27 56 h24" stroke="#159e9b" stroke-width="3"/>
+      <text x="76" y="41" class="h" font-size="14">Scoped context</text>
+      <text x="76" y="61" class="b" font-size="10.5">history + live config</text>
+    </g>
+    <rect x="310" y="566" width="330" height="20" rx="10" fill="#eafaf6" stroke="#56d8c0"/>
+    <text x="475" y="580" text-anchor="middle" font-family="Arial" font-size="9.8" font-weight="700" fill="#138d83">Session isolation • bounded history • secrets stay server-side</text>
+  </g>
+  <path d="M440 593 V609" class="flow"/>
+
+  <!-- 03 -->
+  <g>
+    <rect x="29" y="611" width="823" height="165" rx="14" class="section"/>
+    <circle cx="58" cy="638" r="20" fill="#087fc1"/><text x="58" y="645" text-anchor="middle" class="w" font-size="19">03</text>
+    <text x="101" y="643" class="h" font-size="18">PLAN &amp; SELECT A GUARDED TOOL</text>
+    <g transform="translate(248,662)">
+      <rect width="376" height="82" rx="15" class="card"/>
+      <circle cx="39" cy="41" r="24" fill="url(#mint)"/>
+      <text x="39" y="47" text-anchor="middle" class="h" font-size="15">AI</text>
+      <text x="77" y="29" class="h" font-size="16">Clodds HSK Agent</text>
+      <g transform="translate(77,40)">
+        <rect width="62" height="27" rx="7" class="chip"/><text x="31" y="18" text-anchor="middle" class="h" font-size="9.5">Understand</text>
+        <path d="M64 13 H80" class="flow"/>
+        <rect x="83" width="62" height="27" rx="7" class="chip"/><text x="114" y="18" text-anchor="middle" class="h" font-size="9.5">Reason</text>
+        <path d="M147 13 H163" class="flow"/>
+        <rect x="166" width="62" height="27" rx="7" class="chip"/><text x="197" y="18" text-anchor="middle" class="h" font-size="9.5">Pick tool</text>
+        <path d="M230 13 H246" class="flow"/>
+        <rect x="249" width="43" height="27" rx="7" fill="#fff3e7" stroke="#ff9d54"/><text x="270" y="18" text-anchor="middle" class="h" font-size="9.5">Call</text>
+      </g>
+    </g>
+    <g transform="translate(650,657)">
+      <rect width="164" height="30" rx="8" class="mintcard"/><text x="82" y="19" text-anchor="middle" class="h" font-size="10.5">System policy constraints</text>
+      <rect y="36" width="164" height="30" rx="8" class="mintcard"/><text x="82" y="55" text-anchor="middle" class="h" font-size="10.5">Expected JSON tool result</text>
+      <rect y="72" width="164" height="30" rx="8" class="orangecard"/><text x="82" y="91" text-anchor="middle" class="h" font-size="10.5">Max 6 tool-call rounds</text>
+    </g>
+    <rect x="271" y="749" width="331" height="20" rx="10" fill="#fff4eb" stroke="#ff9d54"/>
+    <text x="436" y="763" text-anchor="middle" class="o" font-size="9.8">Dry-run by default • live trade requires exact confirmation</text>
+  </g>
+  <path d="M440 776 V792" class="flow"/>
+
+  <!-- 04 -->
+  <g>
+    <rect x="29" y="794" width="823" height="216" rx="14" class="section"/>
+    <circle cx="58" cy="821" r="20" fill="#087fc1"/><text x="58" y="828" text-anchor="middle" class="w" font-size="19">04</text>
+    <text x="101" y="826" class="h" font-size="18">OPENROUTER LLM ROUTING &amp; REASONING</text>
+    <g transform="translate(89,850)">
+      <rect width="152" height="26" rx="8" class="mintcard"/><text x="15" y="18" class="h" font-size="10.5">System policy</text>
+      <rect y="31" width="152" height="26" rx="8" class="mintcard"/><text x="15" y="49" class="h" font-size="10.5">Conversation history</text>
+      <rect y="62" width="152" height="26" rx="8" class="mintcard"/><text x="15" y="80" class="h" font-size="10.5">Current user message</text>
+      <rect y="93" width="152" height="26" rx="8" class="mintcard"/><text x="15" y="111" class="h" font-size="10.5">Four tool schemas</text>
+    </g>
+    <path d="M241 910 H292" class="mflow"/>
+    <g transform="translate(296,850)">
+      <rect width="337" height="123" rx="15" class="card"/>
+      <rect width="337" height="27" rx="15" fill="#07557f"/><rect y="15" width="337" height="12" fill="#07557f"/>
+      <text x="18" y="19" class="w" font-size="11">OPENROUTER MESSAGES API</text>
+      <text x="215" y="19" class="w" font-size="11">MODEL</text>
+      <line x1="201" y1="27" x2="201" y2="123" stroke="#afd7ec"/>
+      <line x1="0" y1="58" x2="337" y2="58" stroke="#afd7ec"/>
+      <line x1="0" y1="88" x2="337" y2="88" stroke="#afd7ec"/>
+      <text x="18" y="48" class="h" font-size="11">Configured primary</text><text x="215" y="48" class="b" font-size="10.5">OPENROUTER_MODEL</text>
+      <text x="18" y="78" class="h" font-size="11">Default fallback</text><text x="215" y="78" class="b" font-size="10.5">openrouter/auto</text>
+      <text x="18" y="108" class="h" font-size="11">Catalog filtering</text><text x="215" y="108" class="b" font-size="10.5">tools + text + pricing</text>
+    </g>
+    <path d="M633 910 H687" class="flow"/>
+    <g transform="translate(691,860)">
+      <rect width="122" height="92" rx="14" class="card"/>
+      <circle cx="61" cy="30" r="17" fill="#e7fbf4"/><text x="61" y="35" text-anchor="middle" class="h" font-size="14">AI</text>
+      <text x="61" y="58" text-anchor="middle" class="h" font-size="11">Text response or</text>
+      <text x="61" y="74" text-anchor="middle" class="h" font-size="11">tool-use request</text>
+    </g>
+    <rect x="272" y="980" width="370" height="21" rx="10.5" fill="#fff4eb" stroke="#ff896b"/>
+    <text x="457" y="994" text-anchor="middle" font-family="Arial" font-size="9.6" font-weight="700" fill="#e34d37">Private keys never enter prompts • retry policy • 10-minute catalog cache</text>
+  </g>
+  <path d="M440 1010 V1026" class="flow"/>
+
+  <!-- 05 -->
+  <g>
+    <rect x="29" y="1028" width="823" height="340" rx="14" class="section"/>
+    <circle cx="58" cy="1055" r="20" fill="#087fc1"/><text x="58" y="1062" text-anchor="middle" class="w" font-size="19">05</text>
+    <text x="101" y="1060" class="h" font-size="18">TOOL ACTION &amp; GUARDED HSKSWAP EXECUTION</text>
+    <g transform="translate(89,1083)">
+      <rect width="170" height="47" rx="10" class="card"/><text x="85" y="20" text-anchor="middle" class="h" font-size="11">hsk_agent_status</text><text x="85" y="37" text-anchor="middle" class="b" font-size="9">network • risk • mode</text>
+      <rect x="181" width="170" height="47" rx="10" class="mintcard"/><text x="266" y="20" text-anchor="middle" class="h" font-size="11">hsk_analyze_signals</text><text x="266" y="37" text-anchor="middle" class="b" font-size="9">six-signal decision</text>
+      <rect x="362" width="170" height="47" rx="10" class="card"/><text x="447" y="20" text-anchor="middle" class="h" font-size="11">hsk_quote_swap</text><text x="447" y="37" text-anchor="middle" class="b" font-size="9">read-only V3 quote</text>
+      <rect x="543" width="170" height="47" rx="10" class="orangecard"/><text x="628" y="20" text-anchor="middle" class="h" font-size="11">hsk_execute_swap</text><text x="628" y="37" text-anchor="middle" class="b" font-size="9">guarded live execution</text>
+    </g>
+    <text x="440" y="1154" text-anchor="middle" class="h" font-size="14">LIVE EXECUTION PATH — HSK CHAIN MAINNET 177</text>
+    <g transform="translate(69,1172)">
+      <rect width="104" height="68" rx="12" class="orangecard"/>
+      <circle cx="52" cy="21" r="13" fill="#ff9f1a"/><text x="52" y="25" text-anchor="middle" class="w" font-size="11">1</text>
+      <text x="52" y="44" text-anchor="middle" class="h" font-size="10.5">Live confirmation</text><text x="52" y="58" text-anchor="middle" class="b" font-size="8.8">current message</text>
+      <path d="M105 34 H127" class="oflow"/>
+      <rect x="131" width="104" height="68" rx="12" class="orangecard"/>
+      <circle cx="183" cy="21" r="13" fill="#ff9f1a"/><text x="183" y="25" text-anchor="middle" class="w" font-size="11">2</text>
+      <text x="183" y="44" text-anchor="middle" class="h" font-size="10.5">Live-mode gate</text><text x="183" y="58" text-anchor="middle" class="b" font-size="8.8">server + wallet key</text>
+      <path d="M236 34 H258" class="oflow"/>
+      <rect x="262" width="104" height="68" rx="12" class="card"/>
+      <circle cx="314" cy="21" r="13" fill="#087fc1"/><text x="314" y="25" text-anchor="middle" class="w" font-size="11">3</text>
+      <text x="314" y="44" text-anchor="middle" class="h" font-size="10.5">Fresh quote</text><text x="314" y="58" text-anchor="middle" class="b" font-size="8.8">QuoterV2 static call</text>
+      <path d="M367 34 H389" class="flow"/>
+      <rect x="393" width="104" height="68" rx="12" class="mintcard"/>
+      <circle cx="445" cy="21" r="13" fill="#159e9b"/><text x="445" y="25" text-anchor="middle" class="w" font-size="11">4</text>
+      <text x="445" y="44" text-anchor="middle" class="h" font-size="10.5">Allowance</text><text x="445" y="58" text-anchor="middle" class="b" font-size="8.8">approve if needed</text>
+      <path d="M498 34 H520" class="mflow"/>
+      <rect x="524" width="104" height="68" rx="12" class="mintcard"/>
+      <circle cx="576" cy="21" r="13" fill="#159e9b"/><text x="576" y="25" text-anchor="middle" class="w" font-size="11">5</text>
+      <text x="576" y="44" text-anchor="middle" class="h" font-size="10.5">SwapRouter02</text><text x="576" y="58" text-anchor="middle" class="b" font-size="8.8">exactInputSingle</text>
+      <path d="M629 34 H651" class="mflow"/>
+      <rect x="655" width="104" height="68" rx="12" class="mintcard"/>
+      <circle cx="707" cy="21" r="13" fill="#159e9b"/><text x="707" y="25" text-anchor="middle" class="w" font-size="11">6</text>
+      <text x="707" y="44" text-anchor="middle" class="h" font-size="10.5">Receipt</text><text x="707" y="58" text-anchor="middle" class="b" font-size="8.8">hash + block + URL</text>
+    </g>
+    <rect x="90" y="1260" width="722" height="31" rx="12" fill="#eef9fd" stroke="#86c9f2"/>
+    <text x="451" y="1280" text-anchor="middle" class="h" font-size="10.5">Chain check → token validation → bounded slippage → minimum output → transaction receipt</text>
+    <g transform="translate(90,1302)">
+      <rect width="168" height="34" rx="9" class="chip"/><text x="84" y="21" text-anchor="middle" class="h" font-size="10">WHSK • WETH • USDT</text>
+      <rect x="180" width="168" height="34" rx="9" class="chip"/><text x="264" y="21" text-anchor="middle" class="h" font-size="10">WBTC • USDC</text>
+      <rect x="360" width="168" height="34" rx="9" class="chip"/><text x="444" y="21" text-anchor="middle" class="h" font-size="10">HSKSwap V3 contracts</text>
+      <rect x="540" width="182" height="34" rx="9" class="chip"/><text x="631" y="21" text-anchor="middle" class="h" font-size="10">HashKey Blockscout</text>
+    </g>
+    <rect x="230" y="1342" width="445" height="20" rx="10" fill="#eafaf6" stroke="#56d8c0"/>
+    <text x="452" y="1356" text-anchor="middle" font-family="Arial" font-size="9.5" font-weight="700" fill="#138d83">Least-privilege wallet • deterministic checks • approval only when required</text>
+  </g>
+  <path d="M440 1368 V1384" class="flow"/>
+
+  <!-- 06 -->
+  <g>
+    <rect x="29" y="1386" width="823" height="164" rx="14" class="section"/>
+    <circle cx="58" cy="1413" r="20" fill="#087fc1"/><text x="58" y="1420" text-anchor="middle" class="w" font-size="19">06</text>
+    <text x="101" y="1418" class="h" font-size="18">VERIFY, SYNTHESIZE &amp; PERSIST</text>
+    <g transform="translate(88,1441)">
+      <rect width="145" height="54" rx="11" class="card"/><text x="72" y="23" text-anchor="middle" class="h" font-size="11">Collect tool result</text><text x="72" y="40" text-anchor="middle" class="b" font-size="9.2">structured JSON</text>
+      <path d="M146 27 H170" class="flow"/>
+      <rect x="174" width="145" height="54" rx="11" class="card"/><text x="246" y="23" text-anchor="middle" class="h" font-size="11">Check facts &amp; risk</text><text x="246" y="40" text-anchor="middle" class="b" font-size="9.2">state uncertainty</text>
+      <path d="M320 27 H344" class="flow"/>
+      <rect x="348" width="145" height="54" rx="11" class="mintcard"/><text x="420" y="23" text-anchor="middle" class="h" font-size="11">Synthesize answer</text><text x="420" y="40" text-anchor="middle" class="b" font-size="9.2">concise Markdown</text>
+      <path d="M494 27 H518" class="flow"/>
+      <rect x="522" width="145" height="54" rx="11" class="mintcard"/><text x="594" y="23" text-anchor="middle" class="h" font-size="11">Append history</text><text x="594" y="40" text-anchor="middle" class="b" font-size="9.2">assistant response</text>
+    </g>
+    <rect x="131" y="1507" width="200" height="28" rx="9" class="mintcard"/><text x="231" y="1525" text-anchor="middle" class="h" font-size="10.5">Decision + six signal states</text>
+    <rect x="354" y="1507" width="200" height="28" rx="9" class="mintcard"/><text x="454" y="1525" text-anchor="middle" class="h" font-size="10.5">Quote or transaction receipt</text>
+    <rect x="577" y="1507" width="200" height="28" rx="9" class="mintcard"/><text x="677" y="1525" text-anchor="middle" class="h" font-size="10.5">Status + next safe action</text>
+  </g>
+  <path d="M440 1550 V1566" class="flow"/>
+
+  <!-- 07 -->
+  <g>
+    <rect x="29" y="1568" width="823" height="118" rx="14" class="section"/>
+    <circle cx="58" cy="1595" r="20" fill="#087fc1"/><text x="58" y="1602" text-anchor="middle" class="w" font-size="19">07</text>
+    <text x="101" y="1600" class="h" font-size="18">RETURN VERIFIED RESULT TO CHANNEL</text>
+    <g transform="translate(88,1617)">
+      <rect width="385" height="44" rx="14" fill="url(#navy)"/>
+      <circle cx="33" cy="22" r="15" fill="#fff"/><path d="M24 23 h18 v10 h-10 l-5 4 v-4 h-3z" fill="#087fc1"/>
+      <text x="62" y="27" class="w" font-size="16">WebChat • Telegram • WhatsApp</text>
+      <path d="M386 22 H434" class="flow"/>
+      <rect x="438" width="112" height="44" rx="11" class="card"/><text x="494" y="19" text-anchor="middle" class="h" font-size="10.5">Response text</text><text x="494" y="34" text-anchor="middle" class="b" font-size="9">Markdown</text>
+      <rect x="561" width="112" height="44" rx="11" class="mintcard"/><text x="617" y="19" text-anchor="middle" class="h" font-size="10.5">Action status</text><text x="617" y="34" text-anchor="middle" class="b" font-size="9">hash / URL</text>
+      <rect x="684" width="112" height="44" rx="11" class="mintcard"/><text x="740" y="19" text-anchor="middle" class="h" font-size="10.5">Next step</text><text x="740" y="34" text-anchor="middle" class="b" font-size="9">follow-up</text>
+    </g>
+  </g>
+
+  <path d="M440 1686 V1701 H535" class="flow"/>
+  <text x="440" y="1700" text-anchor="middle" class="h" font-size="11">VERIFIED RESULT RETURN</text>
+  <circle cx="130" cy="1705" r="5" fill="#f07a00"/><text x="142" y="1709" class="b" font-size="9.5">Request data</text>
+  <circle cx="270" cy="1705" r="5" fill="#087fc1"/><text x="282" y="1709" class="b" font-size="9.5">Agent flow / result</text>
+  <circle cx="425" cy="1705" r="5" fill="#159e9b"/><text x="437" y="1709" class="b" font-size="9.5">Context / chain</text>
+  <circle cx="580" cy="1705" r="5" fill="#e34d37"/><text x="592" y="1709" class="b" font-size="9.5">Security gate</text>
+</svg>

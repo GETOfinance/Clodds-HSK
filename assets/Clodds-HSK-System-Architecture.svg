@@ -1,0 +1,291 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1624" height="1836" viewBox="0 0 1624 1836">
+  <defs>
+    <linearGradient id="pageBg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fbfdff"/>
+      <stop offset="1" stop-color="#f4faf9"/>
+    </linearGradient>
+    <linearGradient id="heroBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#07151d"/>
+      <stop offset="1" stop-color="#0c2830"/>
+    </linearGradient>
+    <linearGradient id="mint" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#35e6a6"/>
+      <stop offset="1" stop-color="#22d3ee"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="8" flood-color="#103d52" flood-opacity="0.10"/>
+    </filter>
+    <filter id="soft" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="18"/>
+    </filter>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="9" refY="6" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L10,6 L0,12 Z" fill="#16b8de"/>
+    </marker>
+    <style>
+      .title { font-family: Arial, Helvetica, sans-serif; font-weight: 800; fill: #064f78; }
+      .heading { font-family: Arial, Helvetica, sans-serif; font-weight: 800; fill: #064f78; }
+      .body { font-family: Arial, Helvetica, sans-serif; font-weight: 500; fill: #698198; }
+      .small { font-family: Arial, Helvetica, sans-serif; font-weight: 600; fill: #698198; }
+      .pill { font-family: Arial, Helvetica, sans-serif; font-weight: 800; fill: #ffffff; letter-spacing: .2px; }
+      .card { fill: #ffffff; stroke: #b8def4; stroke-width: 2; }
+      .cardMint { fill: #ffffff; stroke: #70e3c1; stroke-width: 2; }
+      .cardOrange { fill: #ffffff; stroke: #ffb76b; stroke-width: 2; }
+      .chip { fill: #f7fbfd; stroke: #c3e1f3; stroke-width: 1.5; }
+    </style>
+  </defs>
+
+  <rect width="1624" height="1836" fill="url(#pageBg)"/>
+  <circle cx="1450" cy="110" r="125" fill="#35e6a6" opacity="0.035"/>
+  <circle cx="180" cy="730" r="180" fill="#22d3ee" opacity="0.025"/>
+
+  <!-- Header -->
+  <rect x="42" y="34" width="1540" height="186" rx="42" fill="#ffffff" stroke="#b8def4" stroke-width="2" filter="url(#shadow)"/>
+  <rect x="70" y="56" width="142" height="142" rx="36" fill="url(#heroBg)"/>
+  <g transform="translate(87,77)">
+    <circle cx="54" cy="50" r="43" fill="none" stroke="#22d3ee" stroke-width="6"/>
+    <circle cx="54" cy="6" r="5" fill="#35e6a6"/>
+    <circle cx="92" cy="28" r="5" fill="#22d3ee"/>
+    <circle cx="16" cy="28" r="5" fill="#22d3ee"/>
+    <path d="M20 58 C20 43 32 34 45 36 C53 23 75 27 76 43 C90 46 92 65 77 71 H30 C17 70 12 63 20 58Z" fill="none" stroke="#35e6a6" stroke-width="8" stroke-linecap="round"/>
+    <path d="M36 81 l17-18 12 11 19-24" fill="none" stroke="#22d3ee" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M75 49 l12-2-2 12" fill="#22d3ee"/>
+  </g>
+  <text x="248" y="105" class="title" font-size="54">SYSTEM ARCHITECTURE</text>
+  <text x="250" y="151" class="heading" font-size="32" fill="#159e74">Clodds HSK</text>
+  <text x="250" y="188" class="body" font-size="20">Autonomous AI trading agent • HSKSwap • HSK Chain Mainnet</text>
+  <g transform="translate(1245,72)">
+    <rect width="286" height="98" rx="24" fill="#ecfbf6" stroke="#70e3c1" stroke-width="2"/>
+    <circle cx="48" cy="49" r="28" fill="url(#mint)"/>
+    <text x="48" y="57" text-anchor="middle" font-family="Arial" font-size="22" font-weight="800" fill="#062d36">177</text>
+    <text x="88" y="42" class="heading" font-size="18">HSK MAINNET</text>
+    <text x="88" y="68" class="small" font-size="15">Guarded on-chain execution</text>
+  </g>
+
+  <!-- Section 1 -->
+  <rect x="62" y="246" width="1500" height="194" rx="34" fill="#f1f9fd" stroke="#9fd8f6" stroke-width="3"/>
+  <rect x="88" y="263" width="360" height="40" rx="20" fill="#07557f"/>
+  <text x="111" y="290" class="pill" font-size="17">01 • EXPERIENCE &amp; CHANNELS</text>
+  <text x="1080" y="290" class="small" font-size="18">One conversation layer across every interface</text>
+
+  <g transform="translate(88,318)">
+    <rect width="340" height="94" rx="24" fill="#07557f"/>
+    <circle cx="52" cy="47" r="28" fill="#35e6a6"/>
+    <path d="M38 42 h28 v18 h-15 l-8 7 v-7 h-5z" fill="#073a5c"/>
+    <text x="92" y="42" font-family="Arial" font-size="24" font-weight="800" fill="#fff">WebChat</text>
+    <text x="92" y="68" font-family="Arial" font-size="16" font-weight="600" fill="#c9f9e8">Browser UI • WebSocket</text>
+  </g>
+  <g transform="translate(454,318)">
+    <rect width="330" height="94" rx="24" class="card"/>
+    <circle cx="51" cy="47" r="28" fill="#dff6ff"/>
+    <path d="M36 47 L66 35 L57 64 L49 53 L42 59z" fill="#1c9bd1"/>
+    <text x="91" y="42" class="heading" font-size="23">Telegram</text>
+    <text x="91" y="68" class="body" font-size="16">Bot API adapter</text>
+  </g>
+  <g transform="translate(810,318)">
+    <rect width="330" height="94" rx="24" class="cardMint"/>
+    <circle cx="51" cy="47" r="28" fill="#e6fbf2"/>
+    <path d="M39 32 q15-8 26 4 q10 12 1 25 q-9 11-23 5 l-9 4 3-11 q-8-15 2-27z" fill="#20b777"/>
+    <text x="91" y="42" class="heading" font-size="23">WhatsApp</text>
+    <text x="91" y="68" class="body" font-size="16">Linked-device adapter</text>
+  </g>
+  <g transform="translate(1166,318)">
+    <rect width="370" height="94" rx="24" class="card"/>
+    <circle cx="51" cy="47" r="28" fill="#fff2df"/>
+    <text x="51" y="54" text-anchor="middle" font-family="Arial" font-size="20" font-weight="800" fill="#f08b25">API</text>
+    <text x="91" y="42" class="heading" font-size="23">HTTP Gateway</text>
+    <text x="91" y="68" class="body" font-size="16">Status • config • sessions</text>
+  </g>
+
+  <line x1="812" y1="440" x2="812" y2="470" stroke="#16b8de" stroke-width="5" marker-end="url(#arrow)"/>
+
+  <!-- Section 2 -->
+  <rect x="62" y="474" width="1500" height="360" rx="34" fill="#fffaf3" stroke="#ffd196" stroke-width="3"/>
+  <rect x="88" y="491" width="397" height="40" rx="20" fill="#07557f"/>
+  <text x="111" y="518" class="pill" font-size="17">02 • AI AGENT ORCHESTRATION</text>
+  <text x="1130" y="518" class="small" font-size="18">OpenRouter-powered reasoning</text>
+
+  <g transform="translate(91,552)">
+    <rect width="304" height="235" rx="30" fill="url(#heroBg)" filter="url(#shadow)"/>
+    <circle cx="152" cy="71" r="48" fill="url(#mint)"/>
+    <path d="M123 77 C123 59 138 46 155 49 C166 35 190 43 191 61 C208 66 210 91 191 97 H132 C115 96 108 84 123 77Z" fill="#062d36"/>
+    <text x="152" y="144" text-anchor="middle" font-family="Arial" font-size="25" font-weight="800" fill="#fff">Clodds HSK Agent</text>
+    <text x="152" y="174" text-anchor="middle" font-family="Arial" font-size="16" font-weight="600" fill="#bfeedd">Human-controlled autonomy</text>
+    <rect x="53" y="194" width="198" height="27" rx="13.5" fill="#123944"/>
+    <text x="152" y="213" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#70f3c3">MAX 6 TOOL-CALL ROUNDS</text>
+  </g>
+
+  <g transform="translate(422,552)">
+    <rect width="670" height="235" rx="30" fill="#ffffff" stroke="#ffb76b" stroke-width="2.5"/>
+    <text x="28" y="42" class="heading" font-size="26">Conversation &amp; tool orchestration</text>
+    <text x="28" y="70" class="body" font-size="16">One policy prompt, current message, and up to 30 history items</text>
+    <g transform="translate(28,92)">
+      <rect width="184" height="55" rx="17" fill="#f1f9fd" stroke="#9fd8f6" stroke-width="2"/>
+      <text x="92" y="25" text-anchor="middle" class="heading" font-size="17">Session Store</text>
+      <text x="92" y="44" text-anchor="middle" class="body" font-size="13">In-memory context</text>
+    </g>
+    <path d="M220 120 H250" stroke="#16b8de" stroke-width="3" marker-end="url(#arrow)"/>
+    <g transform="translate(260,92)">
+      <rect width="182" height="55" rx="17" fill="#ecfbf6" stroke="#70e3c1" stroke-width="2"/>
+      <text x="91" y="25" text-anchor="middle" class="heading" font-size="17">Agent Manager</text>
+      <text x="91" y="44" text-anchor="middle" class="body" font-size="13">Policy + tool loop</text>
+    </g>
+    <path d="M450 120 H480" stroke="#16b8de" stroke-width="3" marker-end="url(#arrow)"/>
+    <g transform="translate(490,92)">
+      <rect width="152" height="55" rx="17" fill="#fff6e8" stroke="#ffb76b" stroke-width="2"/>
+      <text x="76" y="25" text-anchor="middle" class="heading" font-size="17">Response</text>
+      <text x="76" y="44" text-anchor="middle" class="body" font-size="13">Channel delivery</text>
+    </g>
+    <g transform="translate(28,164)">
+      <rect width="614" height="47" rx="15" fill="#fffaf3" stroke="#ffd196" stroke-width="1.5"/>
+      <text x="307" y="29" text-anchor="middle" font-family="Arial" font-size="16" font-weight="700" fill="#e87500">Retry policy • config hot reload • tool-result feedback</text>
+    </g>
+  </g>
+
+  <g transform="translate(1120,552)">
+    <rect width="416" height="235" rx="30" fill="#eff8fd" stroke="#9fd8f6" stroke-width="2.5"/>
+    <text x="208" y="44" text-anchor="middle" class="heading" font-size="25">LLM POWER LAYER</text>
+    <rect x="26" y="66" width="364" height="62" rx="20" fill="#fff" stroke="#b8def4" stroke-width="1.5"/>
+    <circle cx="66" cy="97" r="21" fill="url(#mint)"/>
+    <text x="66" y="103" text-anchor="middle" font-family="Arial" font-size="17" font-weight="800" fill="#063b4c">OR</text>
+    <text x="100" y="93" class="heading" font-size="20">OpenRouter</text>
+    <text x="100" y="114" class="body" font-size="14">Anthropic-compatible Messages API</text>
+    <rect x="26" y="145" width="174" height="45" rx="15" fill="#fff" stroke="#b8def4"/>
+    <text x="113" y="173" text-anchor="middle" class="heading" font-size="16">Cost-aware models</text>
+    <rect x="216" y="145" width="174" height="45" rx="15" fill="#fff" stroke="#b8def4"/>
+    <text x="303" y="173" text-anchor="middle" class="heading" font-size="16">10-min catalog cache</text>
+    <text x="208" y="215" text-anchor="middle" class="small" font-size="14">Tool-capable text models only</text>
+  </g>
+
+  <line x1="812" y1="834" x2="812" y2="862" stroke="#16b8de" stroke-width="5" marker-end="url(#arrow)"/>
+
+  <!-- Section 3 -->
+  <rect x="62" y="866" width="1500" height="520" rx="34" fill="#f1f9fd" stroke="#9fd8f6" stroke-width="3"/>
+  <rect x="88" y="883" width="414" height="40" rx="20" fill="#07557f"/>
+  <text x="111" y="910" class="pill" font-size="17">03 • DETERMINISTIC TRADING CORE</text>
+  <text x="956" y="910" class="small" font-size="18">Explainable decisions, bounded quotes, guarded execution</text>
+
+  <g transform="translate(88,948)">
+    <rect width="446" height="185" rx="26" class="cardMint"/>
+    <circle cx="52" cy="52" r="28" fill="#e6fbf2"/>
+    <path d="M35 61 L45 48 L55 56 L69 37" fill="none" stroke="#159e74" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="94" y="46" class="heading" font-size="23">Six-Signal Engine</text>
+    <text x="94" y="72" class="body" font-size="15">Explainable buy • hold • sell decisions</text>
+    <g transform="translate(24,96)">
+      <rect width="118" height="30" rx="15" class="chip"/><text x="59" y="20" text-anchor="middle" class="heading" font-size="14">RSI</text>
+      <rect x="130" width="118" height="30" rx="15" class="chip"/><text x="189" y="20" text-anchor="middle" class="heading" font-size="14">MACD</text>
+      <rect x="260" width="138" height="30" rx="15" class="chip"/><text x="329" y="20" text-anchor="middle" class="heading" font-size="14">Bollinger</text>
+      <rect y="40" width="118" height="30" rx="15" class="chip"/><text x="59" y="60" text-anchor="middle" class="heading" font-size="14">Volume</text>
+      <rect x="130" y="40" width="138" height="30" rx="15" class="chip"/><text x="199" y="60" text-anchor="middle" class="heading" font-size="14">Order Book</text>
+      <rect x="280" y="40" width="118" height="30" rx="15" class="chip"/><text x="339" y="60" text-anchor="middle" class="heading" font-size="14">Sentiment</text>
+    </g>
+  </g>
+
+  <g transform="translate(562,948)">
+    <rect width="446" height="185" rx="26" class="card"/>
+    <circle cx="52" cy="52" r="28" fill="#e6f7ff"/>
+    <text x="52" y="58" text-anchor="middle" font-family="Arial" font-size="18" font-weight="800" fill="#0787b6">Q</text>
+    <text x="94" y="46" class="heading" font-size="23">HSKSwap Quote Service</text>
+    <text x="94" y="72" class="body" font-size="15">Read-only V3 exact-input quote</text>
+    <text x="28" y="112" class="small" font-size="15">✓ Chain ID 177 validation</text>
+    <text x="28" y="140" class="small" font-size="15">✓ Token checksum &amp; fee tier</text>
+    <text x="245" y="112" class="small" font-size="15">✓ Slippage 1–2000 bps</text>
+    <text x="245" y="140" class="small" font-size="15">✓ Minimum output &amp; gas</text>
+  </g>
+
+  <g transform="translate(1036,948)">
+    <rect width="500" height="185" rx="26" class="cardOrange"/>
+    <circle cx="52" cy="52" r="28" fill="#fff2df"/>
+    <path d="M52 29 L71 38 V53 C71 66 62 75 52 80 C42 75 33 66 33 53 V38z" fill="#f59e0b"/>
+    <path d="M43 52 l6 6 12-14" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round"/>
+    <text x="94" y="46" class="heading" font-size="23">Live Execution Gates</text>
+    <text x="94" y="72" class="body" font-size="15">Every swap must pass deterministic checks</text>
+    <text x="28" y="112" class="small" font-size="15">✓ Current-message confirmation</text>
+    <text x="28" y="140" class="small" font-size="15">✓ Live-mode environment gate</text>
+    <text x="270" y="112" class="small" font-size="15">✓ Dedicated wallet key</text>
+    <text x="270" y="140" class="small" font-size="15">✓ Fresh quote before submit</text>
+  </g>
+
+  <g transform="translate(88,1160)">
+    <rect width="344" height="186" rx="25" class="card"/>
+    <text x="24" y="41" class="heading" font-size="21">Agent Tools</text>
+    <rect x="24" y="60" width="296" height="28" rx="14" fill="#eff8fd"/><text x="172" y="79" text-anchor="middle" class="heading" font-size="13">hsk_agent_status</text>
+    <rect x="24" y="94" width="296" height="28" rx="14" fill="#eff8fd"/><text x="172" y="113" text-anchor="middle" class="heading" font-size="13">hsk_analyze_signals</text>
+    <rect x="24" y="128" width="142" height="28" rx="14" fill="#eff8fd"/><text x="95" y="147" text-anchor="middle" class="heading" font-size="12">hsk_quote_swap</text>
+    <rect x="178" y="128" width="142" height="28" rx="14" fill="#fff2df"/><text x="249" y="147" text-anchor="middle" class="heading" font-size="12">hsk_execute_swap</text>
+  </g>
+
+  <g transform="translate(456,1160)">
+    <rect width="344" height="186" rx="25" class="cardMint"/>
+    <text x="24" y="41" class="heading" font-size="21">Wallet &amp; Transaction</text>
+    <text x="24" y="74" class="small" font-size="15">ERC-20 allowance check</text>
+    <text x="24" y="101" class="small" font-size="15">Conditional token approval</text>
+    <text x="24" y="128" class="small" font-size="15">SwapRouter02 submission</text>
+    <text x="24" y="155" class="small" font-size="15">Receipt + explorer URL</text>
+  </g>
+
+  <g transform="translate(824,1160)">
+    <rect width="344" height="186" rx="25" class="cardOrange"/>
+    <text x="24" y="41" class="heading" font-size="21">Risk Configuration</text>
+    <text x="24" y="74" class="small" font-size="15">Maximum position %</text>
+    <text x="24" y="101" class="small" font-size="15">Maximum daily loss %</text>
+    <text x="24" y="128" class="small" font-size="15">Stop loss %</text>
+    <text x="24" y="155" class="small" font-size="15">Minimum signal confidence</text>
+  </g>
+
+  <g transform="translate(1192,1160)">
+    <rect width="344" height="186" rx="25" class="card"/>
+    <text x="24" y="41" class="heading" font-size="21">Runtime Services</text>
+    <text x="24" y="74" class="small" font-size="15">Express HTTP server</text>
+    <text x="24" y="101" class="small" font-size="15">WebSocket upgrade handler</text>
+    <text x="24" y="128" class="small" font-size="15">Hot settings reload</text>
+    <text x="24" y="155" class="small" font-size="15">Graceful channel shutdown</text>
+  </g>
+
+  <line x1="812" y1="1386" x2="812" y2="1414" stroke="#16b8de" stroke-width="5" marker-end="url(#arrow)"/>
+
+  <!-- Section 4 -->
+  <rect x="62" y="1418" width="1500" height="348" rx="34" fill="#f7fafc" stroke="#becfda" stroke-width="3"/>
+  <rect x="88" y="1435" width="398" height="40" rx="20" fill="#07557f"/>
+  <text x="111" y="1462" class="pill" font-size="17">04 • HSK CHAIN &amp; EXTERNAL INFRA</text>
+  <text x="1080" y="1462" class="small" font-size="18">Pinned mainnet services and contracts</text>
+
+  <g transform="translate(88,1500)">
+    <rect width="448" height="104" rx="23" class="cardMint"/>
+    <circle cx="53" cy="52" r="30" fill="url(#mint)"/>
+    <text x="53" y="59" text-anchor="middle" font-family="Arial" font-size="20" font-weight="800" fill="#063b4c">177</text>
+    <text x="98" y="43" class="heading" font-size="22">HSK Chain Mainnet</text>
+    <text x="98" y="70" class="body" font-size="15">JSON-RPC • native HSK • Blockscout</text>
+  </g>
+  <g transform="translate(562,1500)">
+    <rect width="448" height="104" rx="23" class="card"/>
+    <circle cx="53" cy="52" r="30" fill="#e6f7ff"/>
+    <path d="M37 52 l16-16 16 16-16 16z" fill="#0787b6"/>
+    <text x="98" y="43" class="heading" font-size="22">HSKSwap V3</text>
+    <text x="98" y="70" class="body" font-size="15">QuoterV2 • SwapRouter02 • Factory</text>
+  </g>
+  <g transform="translate(1036,1500)">
+    <rect width="500" height="104" rx="23" class="cardOrange"/>
+    <circle cx="53" cy="52" r="30" fill="#fff2df"/>
+    <text x="53" y="58" text-anchor="middle" font-family="Arial" font-size="17" font-weight="800" fill="#e87500">OR</text>
+    <text x="98" y="43" class="heading" font-size="22">OpenRouter API</text>
+    <text x="98" y="70" class="body" font-size="15">Model catalog + Messages API</text>
+  </g>
+
+  <g transform="translate(88,1627)">
+    <rect width="448" height="100" rx="23" class="card"/>
+    <text x="24" y="36" class="heading" font-size="20">Supported assets</text>
+    <text x="24" y="68" class="body" font-size="16">WHSK • WETH • USDT • WBTC • USDC</text>
+  </g>
+  <g transform="translate(562,1627)">
+    <rect width="448" height="100" rx="23" class="card"/>
+    <text x="24" y="36" class="heading" font-size="20">Pinned HSKSwap contracts</text>
+    <text x="24" y="66" class="body" font-size="14">Factory V3 • QuoterV2 • Router • Position Manager</text>
+  </g>
+  <g transform="translate(1036,1627)">
+    <rect width="500" height="100" rx="23" class="cardMint"/>
+    <text x="24" y="36" class="heading" font-size="20">Public service endpoints</text>
+    <text x="24" y="66" class="body" font-size="14">/webchat • /health • /api/hsk/status • /api/config/env</text>
+  </g>
+
+  <text x="812" y="1810" text-anchor="middle" class="small" font-size="17">Clodds HSK • AI reasoning with deterministic on-chain safeguards</text>
+</svg>
